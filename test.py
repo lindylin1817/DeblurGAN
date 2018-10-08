@@ -7,7 +7,7 @@ from util.visualizer import Visualizer
 from pdb import set_trace as st
 from util import html
 from util.metrics import PSNR
-from ssim import SSIM
+#from ssim import SSIM
 from PIL import Image
 
 opt = TestOptions().parse()
@@ -19,11 +19,12 @@ opt.no_flip = True  # no flip
 data_loader = CreateDataLoader(opt)
 dataset = data_loader.load_data()
 model = create_model(opt)
+print("To create visualizer========================")
 visualizer = Visualizer(opt)
-# create website
+print("To create website ===========")
 web_dir = os.path.join(opt.results_dir, opt.name, '%s_%s' % (opt.phase, opt.which_epoch))
 webpage = html.HTML(web_dir, 'Experiment = %s, Phase = %s, Epoch = %s' % (opt.name, opt.phase, opt.which_epoch))
-# test
+print("To start testing ===============")
 avgPSNR = 0.0
 avgSSIM = 0.0
 counter = 0
@@ -31,6 +32,7 @@ counter = 0
 for i, data in enumerate(dataset):
 	if i >= opt.how_many:
 		break
+	print("dsfdsfdssssssssssssssssssssssss")
 	counter = i
 	model.set_input(data)
 	model.test()
