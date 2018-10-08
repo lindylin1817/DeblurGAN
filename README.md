@@ -13,9 +13,9 @@ The model we use is Conditional Wasserstein GAN with Gradient Penalty + Perceptu
 
 ### Prerequisites
 - NVIDIA GPU + CUDA CuDNN (CPU untested, feedback appreciated)
-- Pytorch (installation guide with python3.5)
+- Pytorch (installation guide with python3.5. We need to install torch-0.3.1 instead of torch-0.4.1, otherwise there will be error)
 ```bash
-    pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.1-cp35-cp35m-linux_x86_64.whl
+    pip3 install http://download.pytorch.org/whl/cu80/torch-0.3.1-cp35-cp35m-linux_x86_64.whl
     pip3 install torchvision
 ```    
 
