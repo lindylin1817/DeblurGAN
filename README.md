@@ -18,7 +18,11 @@ The model we use is Conditional Wasserstein GAN with Gradient Penalty + Perceptu
     pip3 install http://download.pytorch.org/whl/cu80/torch-0.3.1-cp35-cp35m-linux_x86_64.whl
     pip3 install torchvision
 ```    
-
+- Install requried libraries
+```bash
+    pip3 install dominate
+    
+```
 Download weights from [Dropbox](https://www.dropbox.com/s/5r6cy0x72s8x9yf/latest_net_G.pth?dl=0) . Note that during the inference you need to keep only Generator weights.
 
 Put the weights into 
