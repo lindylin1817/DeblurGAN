@@ -13,7 +13,10 @@ The model we use is Conditional Wasserstein GAN with Gradient Penalty + Perceptu
 
 ### Prerequisites
 - NVIDIA GPU + CUDA CuDNN (CPU untested, feedback appreciated)
-- Pytorch
+- Pytorch (installation guide)
+    # Python 3.5
+    pip3 install http://download.pytorch.org/whl/cpu/torch-0.4.1-cp35-cp35m-linux_x86_64.whl
+    pip3 install torchvision
 
 Download weights from [Dropbox](https://www.dropbox.com/s/5r6cy0x72s8x9yf/latest_net_G.pth?dl=0) . Note that during the inference you need to keep only Generator weights.
 
