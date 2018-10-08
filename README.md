@@ -21,7 +21,7 @@ The model we use is Conditional Wasserstein GAN with Gradient Penalty + Perceptu
 - Install requried libraries
 ```bash
     pip3 install dominate
-    
+    pip3 install visdom
 ```
 Download weights from [Dropbox](https://www.dropbox.com/s/5r6cy0x72s8x9yf/latest_net_G.pth?dl=0) . Note that during the inference you need to keep only Generator weights.
 
