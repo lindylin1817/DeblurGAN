@@ -45,13 +45,12 @@ python datasets/combine_A_and_B.py --fold_A /path/to/data/A --fold_B /path/to/da
 The folder_A can be your real data, such as
 
 <img src="https://github.com/lindylin1817/DeblurGAN/blob/master/CX211.jpg" width="120px"/>
-
 and folder_B can be your self-generated fake data, such as
+
 <img src="https://github.com/lindylin1817/DeblurGAN/blob/master/CX211_B.jpg" width="120px"/>
-
 and the folder_AB will be the output of the combined images path. The output will look like the following picture.
-<img src="https://github.com/lindylin1817/DeblurGAN/blob/master/CX211_AB.jpg" width="120px"/>
 
+<img src="https://github.com/lindylin1817/DeblurGAN/blob/master/CX211_AB.jpg" width="120px"/>
 "--width" in the args is the resized width of resolution, and "--height" is the resized height of resolution. The modifined "combine_A_and_B.py" will automatically resize the images in folder_A and folder_B to ensure the pair of images will have same resolution.
 
 And then the following command to train the model
