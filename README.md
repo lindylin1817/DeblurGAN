@@ -40,8 +40,11 @@ Download dataset for Object Detection benchmark from [Google Drive](https://driv
 
 If you want to train the model on your data run the following command to create image pairs:
 ```bash
-python datasets/combine_A_and_B.py --fold_A /path/to/data/A --fold_B /path/to/data/B --fold_AB /path/to/data
+python datasets/combine_A_and_B.py --fold_A /path/to/data/A --fold_B /path/to/data/B --fold_AB /path/to/data --width 160 --height 120
 ```
+The folder_A can be your real data, such as
+<img src="https://github.com/lindylin1817/DeblurGAN/blob/master/CX211.jpg" width="120px"/>
+and folder_B can be your self-generated fake data
 And then the following command to train the model
 
 ```bash
