@@ -1,0 +1,7 @@
+*.pyc
+*.so
+*.mp4
+*.jpg
+*.zip
+checkpoints
+train_data

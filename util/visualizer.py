@@ -18,6 +18,7 @@ class Visualizer():
             self.display_single_pane_ncols = opt.display_single_pane_ncols
 
         if self.use_html:
+            print("To save the result to html file")
             self.web_dir = os.path.join(opt.checkpoints_dir, opt.name, 'web')
             self.img_dir = os.path.join(self.web_dir, 'images')
             print('create web directory %s...' % self.web_dir)

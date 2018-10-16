@@ -12,7 +12,8 @@ class AlignedDataset(BaseDataset):
         self.opt = opt
         self.root = opt.dataroot
         self.dir_AB = os.path.join(opt.dataroot, opt.phase)
-
+        print(opt.phase)
+        print(self.dir_AB)
         self.AB_paths = sorted(make_dataset(self.dir_AB))
 
         #assert(opt.resize_or_crop == 'resize_and_crop')

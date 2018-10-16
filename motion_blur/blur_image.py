@@ -108,12 +108,14 @@ class BlurImage(object):
 
 
 if __name__ == '__main__':
-    folder = '/Users/mykolam/PycharmProjects/University/DeblurGAN2/results_sharp'
-    folder_to_save = '/Users/mykolam/PycharmProjects/University/DeblurGAN2/blured'
-    params = [0.01, 0.009, 0.008, 0.007, 0.005, 0.003]
+    folder = './sharp'
+    folder_to_save = './blured'
+#    params = [0.5, 0.9, 0.8, 0.7, 0.5, 3]
+    params = 3
     for path in os.listdir(folder):
         print(path)
-        trajectory = Trajectory(canvas=64, max_len=60, expl=np.random.choice(params)).fit()
+#        trajectory = Trajectory(canvas=64, max_len=200, expl=np.random.choice(params)).fit()
+        trajectory = Trajectory(canvas=32, max_len=200, expl=3).fit()
         psf = PSF(canvas=64, trajectory=trajectory).fit()
         BlurImage(os.path.join(folder, path), PSFs=psf,
                   path__to_save=folder_to_save, part=np.random.choice([1, 2, 3])).\
