@@ -56,7 +56,7 @@ and the folder_AB will be the output of the combined images path. The output wil
 And then the following command to train the model
 
 ```bash
-python train.py --dataroot /.path_to_your_data --learn_residual --resize_or_crop crop --gpu_ids 0,1,2,3 --fineSize CROP_SIZE (we used 256)
+python train.py --name /.path_to_store_trained_model --dataroot /.path_to_your_data --learn_residual --resize_or_crop crop --gpu_ids 0,1,2,3 --fineSize CROP_SIZE (we used 256)
 ```
 If you only have one GPU with id=0, then just set "--gpu_ids 0". If you train with CPU, set gpu_ids=-1
 
